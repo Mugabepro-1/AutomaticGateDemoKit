@@ -39,11 +39,11 @@ This project is an embedded systems simulation of an automatic gate that detects
 1. The system keeps the gate closed (servo at 1°) by default, with the red LED ON.
 2. The ultrasonic sensor measures distance continuously.
 3. If an object is detected within 15 cm:
-   - The servo rotates to 95° to open the gate.
+   - The servo rotates to 90° to open the gate.
    - Blue LED turns ON, red LED turns OFF.
    - Buzzer beeps 2 times per second for 5 seconds (10 total beeps).
 4. After 5 seconds:
-   - The servo returns to 1° to close the gate.
+   - The servo returns to 0° to close the gate.
    - Blue LED turns OFF, red LED turns ON.
    - Buzzer stops.
 
@@ -53,7 +53,3 @@ This project is an embedded systems simulation of an automatic gate that detects
 2. Upload the Arduino sketch (`.ino` file) using the Arduino IDE.
 3. Open the Serial Monitor to observe distance readings (optional).
 4. Place an object in front of the ultrasonic sensor to trigger the gate.
-
-## License
-
-This project is open-source and available under the MIT License.
